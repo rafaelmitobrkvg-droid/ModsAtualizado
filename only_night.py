@@ -32,7 +32,14 @@ class OnlyNight(babase.Plugin):
             "Zigzag",
             "The Pad",
         ]:
-            gnode.tint = (0.45, 0.55, 1.0)
+            gnode.tint = (1.3, 1.2, 1.0)
+        gnode.ambient_color = (1.3, 1.2, 1.0)
+        gnode.vignette_outer = (0.57, 0.57, 0.57)
+        gnode.vignette_inner = (0.9, 0.9, 0.9)
+        gnode.vr_camera_offset = (0, -0.8, -1.1)
+        gnode.vr_near_clip = 0.5
+        cols = [(0.10, 0.3, 0.5), (0.6, 0.3, 0.6), (0.6, 0.3, 0.1),
+                (0.2, 0.4, 0.1), (0.4, 0.3, 0.7), (0.10, 0.3, 0.5)]
         elif self.map.getname() in [
             "Big G",
             "Bridgit",
@@ -43,8 +50,22 @@ class OnlyNight(babase.Plugin):
             "Happy Thoughts",
             "Hockey Stadium",
         ]:
-            gnode.tint = (0.45, 0.55, 1.0)
+            gnode.tint = gnode.tint = (1.3, 1.2, 1.0)
+        gnode.ambient_color = (1.3, 1.2, 1.0)
+        gnode.vignette_outer = (0.57, 0.57, 0.57)
+        gnode.vignette_inner = (0.9, 0.9, 0.9)
+        gnode.vr_camera_offset = (0, -0.8, -1.1)
+        gnode.vr_near_clip = 0.5
+        cols = [(0.10, 0.3, 0.5), (0.6, 0.3, 0.6), (0.6, 0.3, 0.1),
+                (0.2, 0.4, 0.1), (0.4, 0.3, 0.7), (0.10, 0.3, 0.5)]
         else:
-            gnode.tint = (0.45, 0.55, 1.0)
+            gnode.tint = gnode.tint = (1.3, 1.2, 1.0)
+        gnode.ambient_color = (1.3, 1.2, 1.0)
+        gnode.vignette_outer = (0.57, 0.57, 0.57)
+        gnode.vignette_inner = (0.9, 0.9, 0.9)
+        gnode.vr_camera_offset = (0, -0.8, -1.1)
+        gnode.vr_near_clip = 0.5
+        cols = [(0.10, 0.3, 0.5), (0.6, 0.3, 0.6), (0.6, 0.3, 0.1),
+                (0.2, 0.4, 0.1), (0.4, 0.3, 0.7), (0.10, 0.3, 0.5)]
 
     GameActivity.on_transition_in = new_on_transition_in
